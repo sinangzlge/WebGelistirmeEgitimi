@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>BACKGROUND İMAGE </title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+	<style>
+		/* rgba (230, 255, 230, 0.7)
+	   rgba (102, 255, 102, 0.7)
+		*/
+
+		* {
+			margin: 0px;
+			padding: 0px;
+
+		}
+		
+		body {
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		.header {
+
+			background-image:
+				linear-gradient(to left bottom, rgba(102, 255, 102, 0.7), rgba(230, 255, 230, 0.7)), url(img/arkaplan.jpg);
+			height: 95vh;
+			background-size: cover;
+			background-position: center;
+			opacity: 0.6;
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%)
+		}
+		
+				.header-1{
+
+			background-image:
+				linear-gradient(to left bottom, rgba(102, 255, 102, 0.7), rgba(230, 255, 230, 0.7)), url(img/arkaplan.jpg);
+			height: 95vh;
+			background-size: cover;
+			background-position: center;
+			opacity: 0.6;
+			clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%)
+		}
+		
+		
+		header{
+			position: relative;
+		}
+
+		.heading{
+			text-transform: uppercase;
+			color: white;
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			text-align: center;
+			transform: translate(-50%,-50%)
+		}
+		
+
+		
+		.heading-main {
+			display: block;
+			font-size: 50px;
+			letter-spacing: 10px;
+			
+		}
+		
+		.heading-sub {
+			display: block;
+			font-size: 30px;
+			letter-spacing: 5px;
+		}
+		
+		.logo-box {
+			position: absolute;
+			top: 25px;
+			left: 40px;
+		}
+		
+		.logo {
+			height: 50px;
+		}
+		
+	</style>
+</head>
+
+<body>
+
+
+
+
+	<header class="header">
+
+		<div class="logo-box">
+			<img class="logo" src="img/nikelogo.jpg" alt="">
+		</div>
+
+
+		<h1 class="heading">
+			<span class="heading-main">Maid Title</span>
+			<span class="heading-sub">Sub Title</span>
+		</h1>
+
+
+
+	</header>
+
+
+
+	<header class="header-1">
+
+		<div class="logo-box">
+			<img class="logo" src="img/nikelogo.jpg" alt="">
+		</div>
+
+
+		<h1 class="heading">
+			<span class="heading-main">Maid Title</span>
+			<span class="heading-sub">Sub Title</span>
+		</h1>
+
+
+
+	</header>
+
+
+
+</body>
+
+</html>
