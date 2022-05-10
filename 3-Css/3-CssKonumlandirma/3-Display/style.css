@@ -1,0 +1,24 @@
+/**Display : none / inline / block / inline-block */
+
+
+/** Browser Defaults */
+
+/** Override Defaults */
+
+div{
+	display: inline-block;
+	height: 200px;
+	background: red;
+	margin: 5px;
+}
+
+#first{
+	width: 500px;
+}
+
+span{
+	background: aqua;
+	display: inline-block;
+	width: 200px;
+	height: 100px;
+}

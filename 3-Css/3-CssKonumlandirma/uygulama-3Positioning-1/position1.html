@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Position</title>
+	<style>
+		.box {
+			width: 120px;
+			height: 120px;
+		}
+		
+		
+		.mbox{
+			width: 30px;
+			height: 30px;
+			background: yellow;
+			position: absolute;
+			top: 50px;
+			left: 50px;
+		}
+		
+
+		#first {
+			background:red;
+			width:100%;
+			position: sticky;
+			top: 50px;
+			
+			
+		}
+
+		#second {
+			background: blue;
+			position: relative;
+	
+		}
+
+		#third {
+			background: green;
+			position: fixed;
+			bottom: 0px;
+			right: 0px;
+		}
+		
+
+	</style>
+</head>
+
+<body>
+
+	<!-- Position : static | relative | fixed | absolute | sticky -->
+	
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, obcaecati. Distinctio molestiae suscipit quos, aliquam at facere similique in, velit est numquam mollitia beatae, eos quasi porro, tempore labore soluta.</p>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam labore optio fuga est illum eveniet non magni dolorem, amet ad. Nulla tempore adipisci reiciendis eveniet id dicta assumenda illo voluptatum.</p>
+
+
+	<div class="box" id="first">Box 1</div>
+	
+	<div class="box" id="second">
+		<div class="mbox"></div>
+	</div>
+	
+	<div class="box" id="third">Box 3</div>
+
+	<div style="height: 2000px;"></div>
+
+
+
+
+</body>
+
+</html>

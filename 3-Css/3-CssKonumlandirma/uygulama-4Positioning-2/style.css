@@ -1,0 +1,62 @@
+#container {
+	width: 1140px;
+
+
+}
+
+
+#blog-post-container {
+	width: 75%;
+	float: left;
+
+}
+
+#other-posts{
+	width: 25%;
+	float: left;
+	position: fixed;
+	top: 20px;
+	right: 0px;
+
+
+
+
+}
+
+#author-box {}
+
+.blog-post {
+	position: relative;
+}
+
+.date {
+	position: absolute;
+	right: 60px;
+	top: 0px;
+
+}
+
+
+.tags {
+	margin: 0px;
+	padding: 0px;
+}
+
+.tags li {
+	list-style: none;
+	display: inline;
+	margin-right: 10px;
+}
+
+/** .tags li{
+	list-style: none;
+	display: inline-block;
+	width: 80px;
+}
+
+*/
+
+
+.tags li a {
+	text-decoration: none;
+}

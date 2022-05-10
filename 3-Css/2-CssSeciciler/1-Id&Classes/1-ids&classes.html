@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>İD's & Classes</title>
+
+	<!-- 
+
+class: ör: .red : (.) bu şekilde ulaşıyoruz
+	id : or: #header (#) ile ulaşabiliyoruz
+	class - id farkı : ortak kullanım için kullanılır yani birden fazla elemana verebiliyoruz fakat id de ise sadece bir eleman için kullanılır.
+	
+
+	important : yazdığımız kodu öncelik vermek için baskı uygular.
+	
+	-->
+
+	<style>
+		p {
+
+
+			font-size: 20px !important;
+
+		}
+
+		.f25 {
+			font-size: 25px;
+		}
+
+		.f30 {
+			font-size: 30px;
+		}
+
+		.f35 {
+			font-size: 35px !important;
+		}
+
+
+
+
+		.red {
+
+			color: red;
+		}
+
+		.blue {
+
+			color: blue;
+		}
+
+		h1 {
+
+			color: yellow;
+		}
+
+		#header {
+			
+			font-size: 45px;
+			
+		}
+		
+		#paragraf {
+			
+			border: 1px solid yellow;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+
+	<h1 id="header" class="red">
+		Udemy Kurslarımıza Hoşgeldiniz
+	</h1>
+
+
+
+	<p id="paragraf" class="blue f35"> Komple Uygulamalı Web Geliştirme</p>
+	<p class="f30"> Komple Uygulamalı Web Geliştirme</p>
+	<p class="red f25"> Komple Uygulamalı Web Geliştirme</p>
+	<p> Komple Uygulamalı Web Geliştirme</p>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
