@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Styling Text</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	
+	<!-- 
+	text-decoration =
+	   overline : seçilen yazının üst kısmını çizilir.
+	   line-through : yazının üzeri çizilir.
+	   underline : text'in altını çizer (varsayılan a etiketi için).
+	   none : olan çizgiyi siler.
+	   
+	   line-height : satır aralığını belirler.
+	   letter-spacing : harf aralığını belirler.
+	   word-spacing : kelime aralığını belirler.
+	   text-indent : paragrafın başının ne kadar aralığı olacağını belirler.
+	   
+	   text-transform =
+	   uppercase : bütün harfleri büyük yapar.
+	   lowercase : bütün harfleri küçük yapar.
+	   capitalize : harflerin başını büyük yapar. 
+	   
+	   -->
+	
+	
+	<style>
+		body {
+			font-family: 'Open Sans', sans-serif;
+			width: 700px;
+			margin: 30px auto;
+		
+		}
+		
+		h2{
+			text-transform: capitalize;
+		}
+		
+		p{
+			font-size: 22px;
+			line-height: 150%;
+			word-spacing: 3px;
+			text-indent: 20px;
+			letter-spacing: 2px;
+		}
+		
+		.bold{
+			font-weight: bold;
+		}
+		
+		.italic{
+			font-style: italic;
+		}
+		
+		.link{
+			color: #03a9f4;
+			text-decoration: none;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia debitis non mollitia in praesentium ab qui, sed architecto beatae odio fuga libero voluptatum, autem, deserunt placeat quam facere pariatur
+		 <span class="bold italic">
+		 	<a class="link" href="#">voluptate!</a>
+		 </span>
+	</p>
+
+</body>
+
+</html>

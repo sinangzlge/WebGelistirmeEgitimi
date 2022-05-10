@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Styling Text</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	
+	<!-- 
+	
+	text-align =
+	rigt : içeriği sağa hizalar.
+	center : yazıyı ortalar.
+	justify : paragrafın yazıların boşluklarını siler ve yazıyı sağ ve sola yapıştırır.
+	
+	column-count : etiketin içeriğini böler.
+	column-rule : bölünen aralıklara çizgi ekler.
+	
+	-->
+	
+	
+	<style>
+		body {
+			font-family: 'Open Sans', sans-serif;
+			width: 900px;
+			margin: 30px auto;
+		
+		}
+		
+		p#first{
+			text-align: right;
+		}
+		
+		p#second{
+			text-align: center;
+		}
+		
+		p#third{
+			text-align: left;
+			border: 1px solid rgb(0,0,0,0.4);
+			padding: 10px;
+			
+			column-count: 3;
+			-webkit-column-count: 3; /* opera - chrome - safari tarayıcıları için */
+			-moz-column-count: 3; /* mozilla için */
+			
+			column-rule: 1px solid rgb(0,0,0,0.4);
+			-webkit-column-rule: 1px solid rgb(0,0,0,0.4);  /* opera - chrome - safari */
+			-moz-column-rule: 1px solid rgb(0,0,0,0.4); /* mozilla tarayıcı için */
+		}
+		
+		p#forth{
+			text-align: justify;
+			text-indent: 15px;
+		}
+		
+	 div{
+			text-align: center;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+
+
+	<p id="first">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus reiciendis aut nulla odit, consequatur dolore eius repudiandae fugit dolorem laudantium similique harum minima, id repellat accusantium. Dolore ad eius velit nesciunt. Iusto fugit commodi expedita illo, quibusdam numquam velit ipsum nostrum dolor aliquid. Rem quaerat porro molestias. Debitis, praesentium rerum!
+	</p>
+	
+	
+	<p id="second">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus reiciendis aut nulla odit, consequatur dolore eius repudiandae fugit dolorem laudantium similique harum minima, id repellat accusantium. Dolore ad eius velit nesciunt. Iusto fugit commodi expedita illo, quibusdam numquam velit ipsum nostrum dolor aliquid. Rem quaerat porro molestias. Debitis, praesentium rerum!
+	</p>
+	
+	<p id="third">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus reiciendis aut nulla odit, consequatur dolore eius repudiandae fugit dolorem laudantium similique harum minima, id repellat accusantium. Dolore ad eius velit nesciunt. Iusto fugit commodi expedita illo, quibusdam numquam velit ipsum nostrum dolor aliquid. Rem quaerat porro molestias. Debitis, praesentium rerum!
+	</p>
+	
+	
+	<p id="forth">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus reiciendis aut nulla odit, consequatur dolore eius repudiandae fugit dolorem laudantium similique harum minima, id repellat accusantium. Dolore ad eius velit nesciunt. Iusto fugit commodi expedita illo, quibusdam numquam velit ipsum nostrum dolor aliquid. Rem quaerat porro molestias. Debitis, praesentium rerum!
+	</p>
+	
+	
+	<div>
+	<a href="">Link 1</a>
+	<a href="">Link 2</a>
+	<a href="">Link 3</a>
+</div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
