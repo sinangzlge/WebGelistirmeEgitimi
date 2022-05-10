@@ -1,0 +1,243 @@
+	<!DOCTYPE html>
+	<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<title> Dropdown </title>
+
+		<style>
+
+
+
+		</style>
+
+	</head>
+
+	<body class="w-75 mx-auto my-4">
+
+
+		<!-- dropdown : açılır button  -->
+		<div class="dropdown">
+
+			<button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Dropdown Button</button>
+
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item">Link 1</a>
+				<a href="#" class="dropdown-item">Link 2</a>
+				<a href="#" class="dropdown-item">Link 3</a>
+			</div>
+
+		</div>
+
+		<br>
+		<hr>
+		<br>
+
+
+		<!-- Dropdown menü elemanlarının her biri arasına (.dropdown-divider) sınıfı ile bir ayraç ekleyebiliriz.  -->
+		<div class="dropdown">
+
+
+			<button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Dropdown Button</button>
+
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item">Link 1</a>
+				<a href="#" class="dropdown-item">Link 2</a>
+				<a href="#" class="dropdown-item">Link 3</a>
+				<div class="dropdown-divider"></div>
+				<a href="#" class="dropdown-item">Link 4</a>
+			</div>
+
+
+		</div>
+
+		<br>
+		<hr>
+		<br>
+
+		<!-- Bootstrap dropdown menünün belli elemanlarını gruplayıp her bir gruba bir başlık ekleyebiliriz.-->
+		<div class="dropdown">
+
+
+			<button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Dropdown Button</button>
+
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item">Link 1</a>
+				<a href="#" class="dropdown-item">Link 2</a>
+				<a href="#" class="dropdown-item">Link 3</a>
+				<div class="dropdown-header">Header</div>
+				<a href="#" class="dropdown-item">Link 4</a>
+				<a href="#" class="dropdown-item">Link 5</a>
+			</div>
+
+
+		</div>
+
+
+
+		<br>
+		<hr>
+		<br>
+
+		<!-- Bootstrap dropdown elemanlarının her birine .active ya da .disabled sınıflarını ekleyerek aktif ya da pasif hale getirebiliriz.  -->
+		<div class="dropdown">
+
+			<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown Button</button>
+
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item active">Link 1</a>
+				<a href="#" class="dropdown-item">Link 2</a>
+				<a href="#" class="dropdown-item disabled">Link 3</a>
+			</div>
+
+		</div>
+
+		<br>
+		<hr>
+		<br>
+
+
+		<!-- dropright : ile menümüzü sağ taraftan açabiliriz    -->
+
+		<div class="dropdown dropright">
+
+			<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown Button</button>
+
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item active">Link 1</a>
+				<a href="#" class="dropdown-item">Link 2</a>
+				<a href="#" class="dropdown-item disabled">Link 3</a>
+			</div>
+
+		</div>
+
+		<br>
+		<hr>
+		<br>
+
+
+		<!-- dropleft : ile menümüzü sol taraftan açabiliriz    -->
+
+		<div class="dropdown dropleft float-right">
+
+			<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown Button</button>
+
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item active">Link 1</a>
+				<a href="#" class="dropdown-item">Link 2</a>
+				<a href="#" class="dropdown-item disabled">Link 3</a>
+			</div>
+
+		</div>
+
+
+		<br>
+		<hr>
+		<br>
+
+		<!-- dropdown group oluşturma, Bootstrap button group' ları ile dropdown butonlarını beraber kullanabiliriz. -->
+
+		<div class="btn-group">
+
+			<button type="button" class="btn btn-primary">Button 1</button>
+			<button type="button" class="btn btn-primary">Button 2</button>
+			<button type="button" class="btn btn-primary">Button 3</button>
+
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Button 4</button>
+
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item">Link 1</a>
+					<a href="#" class="dropdown-item">Link 2</a>
+				</div>
+
+			</div>
+		</div>
+
+
+		<br>
+		<hr>
+		<br>
+
+		<!-- (Split button dropdown ) button'un yanına ok ekler eklenen o ile dropdown menümüzü açabiliriz  -->
+
+		<div class="btn-group">
+
+			<button type="button" class="btn btn-primary">Primary</button>
+			<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item">Link 1</a>
+				<a href="#" class="dropdown-item">Link 2</a>
+			</div>
+
+		</div>
+
+
+		<div class="btn-group">
+
+			<button type="button" class="btn btn-danger">Danger</button>
+			<button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item">Link 1</a>
+				<a href="#" class="dropdown-item">Link 2</a>
+			</div>
+
+		</div>
+
+
+
+		<div class="btn-group">
+
+			<button type="button" class="btn btn-warning">Danger</button>
+			<button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item">Link 1</a>
+				<a href="#" class="dropdown-item">Link 2</a>
+			</div>
+
+		</div>
+
+
+		<br>
+		<hr>
+		<br>
+
+
+		<!-- Vertical Button group : Bootstrap dropdown butonlarını button group içerisine alıp .btn-group-vertical sınıfını kullanarak dikey açılır menü oluşturabiliriz. -->
+
+
+
+		<div class="btn-group-vertical">
+			
+			<button type="button" class="btn btn-primary">Button 1</button>
+			<button type="button" class="btn btn-primary">Button 2</button>
+			
+			<div class="btn-group dropright">
+				
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Button 3</button>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item">Link 1</a>
+					<a href="#" class="dropdown-item">Link 2</a>
+				</div>
+			</div>
+			
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	</body>
+
+	</html>

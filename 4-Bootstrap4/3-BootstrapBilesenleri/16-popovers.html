@@ -1,0 +1,167 @@
+	<!DOCTYPE html>
+	<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<title> Popover </title>
+
+		<style>
+
+
+
+		</style>
+
+	</head>
+
+	<body class="container my-4">
+
+
+		<!-- Tooltip ile yapabildiğimizi popover ile de yapabiliriz fark olarak tıklama ile de mesaj kutusunu aktif edebiliyoruz.
+			** popover eklenecek nesneye data-toggle="popover" eklemeliyiz.
+	    ** title ile mesaj kutusunun başlık kısmını tanımlıyoruz.
+	    ** data-content ile mesaj kutusunun içerik kısmındaki yazıyı tanımlıyoruz.
+	    ** popver aktif etmek için mutlaka Jquery kodu yazmalıyız. Jquery kütüphanesinin alında olmalıdır.  
+		      -->
+
+
+
+		<a href="#" class="btn btn-primary" data-toggle="popover" title="popover header" data-content="some content">
+			Toogle Popover
+		</a>
+
+		<br>
+		<hr>
+		<br>
+
+		<!-- popover :  data-placement özelliği ile konumlandırma yapabiliriz -->
+
+		<a href="#" class="btn btn-warning" data-toggle="popover" title="popover header" data-content="some content" data-placement="top">
+			Popover on top
+		</a>
+
+
+
+		<a href="#" class="btn btn-warning" data-toggle="popover" title="popover header" data-content="some content" data-placement="right">
+			Popover on right
+		</a>
+
+
+
+		<a href="#" class="btn btn-warning" data-toggle="popover" title="popover header" data-content="some content" data-placement="bottom">
+			Popover on bottom
+		</a>
+
+
+
+		<a href="#" class="btn btn-warning" data-toggle="popover" title="popover header" data-content="some content" data-placement="left">
+			Popover on left
+		</a>
+
+
+		<br>
+		<hr>
+		<br>
+
+		<!-- data-trigger="focus" : ile popover'in açtıktan sonra her hangi bir boş alana tıkladığımızda popover kapanır. fakat üzerine tıkladığımızda popover kapanmaz. -->
+
+		<a href="#" class="btn btn-primary" data-trigger="focus" data-toggle="popover" title="popover header" data-content="some content">
+			Toogle Popover
+		</a>
+
+
+
+		<br>
+		<hr>
+		<br>
+
+		<!-- data-trigger="hover" : ile popover'in üzerine geldiğimizde içeriği açılır . -->
+
+		<a href="#" class="btn btn-primary" data-trigger="hover" data-toggle="popover" title="popover header" data-content="some content">
+			Toogle Popover
+		</a>
+
+
+		<br>
+		<hr>
+		<br>
+
+		<!--JavaScript Jquery kütüphanesini kullanma -->
+
+		<a id="btnPopover" href="#" class="btn btn-primary" data-trigger="hover" data-toggle="popover" title="popover header" data-content="some content">
+			Toogle Popover
+		</a>
+
+		<br><br>
+
+		<button type="button" class="btn btn-success" onclick="showPopover()">
+			Show
+		</button>
+
+		<button type="button" class="btn btn-success" onclick="hidePopover()">
+			Hide
+		</button>
+
+		<button type="button" class="btn btn-success" onclick="togglePopover()">
+			Toggle
+		</button>
+
+
+
+
+
+
+
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+		<script>
+			$(function() {
+				$('[data-toggle="popover"]').popover();
+			});
+
+
+			function showPopover() {
+				$('#btnPopover').popover('show');
+			}
+
+			function hidePopover() {
+				$('#btnPopover').popover('hide');
+			}
+
+			function togglePopover() {
+				$('#btnPopover').popover('toggle');
+			}
+
+
+
+			$('#btnPopover').on('show.bs.popover', function() {
+				console.log('shown');
+			});
+
+
+			$('#btnPopover').on('shown.bs.popover', function() {
+				console.log('show');
+			});
+
+
+			$('#btnPopover').on('hide.bs.popover', function() {
+				console.log('hide');
+			});
+
+			$('#btnPopover').on('hidden.bs.popover', function() {
+				console.log('hidden');
+			});
+
+		</script>
+
+
+
+	</body>
+
+	</html>
