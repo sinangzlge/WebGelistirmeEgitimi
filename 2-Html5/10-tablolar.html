@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Tablolar</title>
+</head>
+
+<body>
+
+
+	<!-- 
+	 
+	 table row= tr : satır 
+	 table data= td :  kolonları yani sütunları
+	 th : tablo başlığı
+	 border : tablo kenarlığını belirler
+	 thead : başlık kolonları
+	 tbody : veri-içerik kısmı
+	 colspan : kolonda ne kadar yer kaplayacağını belirler - sütunları birleştirir
+	 rowspan : satırın ne kadar yer kaplayacağını belirler - satırları birleştirir
+	
+	-->
+
+
+
+	<table border="1" width="60%">
+
+		<thead>
+			<tr>
+
+				<th>Kurs Adı</th>
+				<th>Kurs Saati</th>
+				<th>Ders Adeti</th>
+
+			</tr>
+		</thead>
+
+		<tbody>
+
+			<tr>
+
+				<td>Komple Web geliştirme</td>
+				<td>45</td>
+				<td>300</td>
+
+			</tr>
+
+			<tr>
+
+				<td>Core 2 Mvc Eğitimi Sıfırdan İleri Seviye</td>
+				<td>30 </td>
+				<td>200</td>
+
+			</tr>
+
+
+			<tr>
+
+				<td>Core 2 Mvc Eğitimi Sıfırdan İleri Seviye</td>
+				<td>30 </td>
+				<td rowspan="2">200</td>
+
+			</tr>
+
+
+
+			<tr>
+
+				<td colspan="2">Core 2 Mvc Eğitimi Sıfırdan İleri Seviye</td>
+			
+
+			</tr>
+			
+
+			<tr>
+
+				<td colspan="3">Core 2 Mvc Eğitimi Sıfırdan İleri Seviye</td>
+
+
+			</tr>
+
+			
+
+		</tbody>
+
+
+
+
+
+	</table>
+
+</body>
+
+</html>

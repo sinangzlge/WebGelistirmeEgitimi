@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Formlar</title>
+</head>
+
+<body>
+
+
+	<!-- 
+      
+     checkbox : kareli seçim
+     
+     radio : yuvarlak seçim 
+     
+     radio name : ör:name =cinsiyet tek seçim yaptırır.  
+     
+      multiple : çoklu seçim yaptırır,
+      
+      action : formun nereye gönderileceğini belirler 
+      
+      name : doldurulan formun neye göre alınacağını belirler yani name=isim  yazdığımızda server da  isim bölümüne gider.
+      
+      required : gerekli alanı doldurma zorunluluğu getirir
+      
+      email: mail adresi girmemize olanak sağlar
+      
+      placeholder: kutu içinde bilgi verir kutu içinde yazı yazıldığı zaman bilgi içeriği gider.
+      
+     <input type="submit"> : forma buton oluşturur.
+     
+      reset : formu sıfırlamamızı sağlar.
+      
+      color : renk seçmemizi sağlar.
+      
+      date : doğum gününü girmemizi sağlar.
+      
+      number sayı seçmemizi sağlar.
+            
+       readonly : içerik girmemizi engeller.     
+             -->
+
+
+
+	<form action="/Home/Register">
+
+		
+		<p>
+			Readonly : <input type="text" name="ad" placeholder="Adınızı Giriniz" readonly>
+		</p>
+
+		<p>
+			Adı : <input type="text" name="ad" placeholder="Adınızı Giriniz" required>
+		</p>
+
+
+		<p>
+			Soyadı : <input type="text" name="soyadı" placeholder="Soyadınızı Giriniz" required>
+		</p>
+
+		<p>
+			E-POSTA : <input type="email" name="email" required>
+		</p>
+
+
+		<p>
+			Beni Hatırla : <input type="checkbox" name="hatırlatma" >
+		</p>
+
+
+		<p>
+			Erkek : <input type="radio" name="cinsiyet">
+			Kadın : <input type="radio" name="cinsiyet">
+		</p>
+
+
+		<p>
+			HOBİLERİNİZ <br>
+
+			Sinema : <input type="checkbox" name="hobiler">
+			Spor : <input type="checkbox" name="hobiler">
+			Kitap okumak : <input type="checkbox" name="hobiler">
+			Resim çizmek : <input type="checkbox" name="hobiler">
+
+		</p>
+
+
+		<p>
+
+			<select name="Şehir" id="">
+				<option value="">ANKARA</option>
+				<option value="">KOCAELİ</option>
+				<option value="">İSTANBUL</option>
+
+			</select>
+
+		</p>
+
+
+
+		<p>
+
+			<select multiple name="Şehirler" id="">
+				<option value="">ANKARA</option>
+				<option value="">KOCAELİ</option>
+				<option value="">İSTANBUL</option>
+
+			</select>
+			
+			</p>
+			
+			<!--
+			 ÖRNEK :
+			  min : 0 en fazla 0a kadar iner 
+			max : 100 en fazla 100'e kadar gider
+			step : 10 10'ar 10'ar artar 
+			value : 30 30dan başlar 
+			
+			-->
+			
+			<p>
+			
+			<input type="number" name="quantity" min="0" max="100" step="10" value="30">
+				
+				
+			</p>
+			
+			
+			<p>
+				
+				<input type="number"><br><br>
+				
+				<input type="number" name="quantity" min="1" max="10">
+				
+			</p>
+
+		
+
+ 		<input type="date" name="bday"><br><br>
+		<input type="color" name="favcolor" value="#ff0000"><br><br>
+		<input type="submit" value="Kaydet">
+		<input type="reset">
+
+
+	</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
