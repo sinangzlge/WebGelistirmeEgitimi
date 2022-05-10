@@ -1,0 +1,21 @@
+.box{
+    display:inline-flex;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.red{
+    background-color: red;
+}
